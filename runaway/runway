@@ -1,0 +1,5 @@
+import commands
+
+def top():
+    ls = commands.get("ls")
+    print ls
