@@ -7,7 +7,7 @@ import sshSessions
 if __name__ == "__main__":
     s = sshSessions.sshSessions()
     st = s.getComputers()
-#    for i in st:
+#    for i in st
 #        print i 
     s.getPS() 
 
