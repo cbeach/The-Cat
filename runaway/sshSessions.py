@@ -8,9 +8,9 @@ class sshSessions:
         self.processes = []
 
     def getComputers(self):
-	temp = []
+	    temp = []
         linuxLogin = commands.getoutput("netgrouplist linux-login-sys")
-	csServer = commands.getoutput("netgrouplist cs-server-sys")
+	    csServer = commands.getoutput("netgrouplist cs-server-sys")
         eceGeneral = commands.getoutput("netgrouplist ece-general-sys")
         catService = commands.getoutput("netgrouplist cat-service-sys")
         catServer = commands.getoutput("netgrouplist cat-server-sys")
