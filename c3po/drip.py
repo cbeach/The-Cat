@@ -31,6 +31,9 @@ class SnotDrip:
 
     def postToWindow(self):
         height, width = self.window.getmaxyx() 
+        for i in range(width):
+            window.addch(i, 0, ' ', curses.color_pair(1))
+            window.addch(i, 2, ' ', curses.color_pair(1))
 
     def lastNTickets(self, numberOfTickets):
 
