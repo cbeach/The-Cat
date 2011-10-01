@@ -2,6 +2,7 @@ import curses
 import colors
 import time
 import drip
+
 class Mcp:
     
     stdscr = None
@@ -29,11 +30,11 @@ class Mcp:
         self.stdscr.keypad(1)
         colors.init_colors()
 
-
-
-    def __del__(self):
+    def stopCurses(self):
         curses.nocbreak()
         curses.echo()
         self.stdscr.keypad(0)
         curses.endwin()
-        
+
+    def __del__(self):
+         self.stopCurses()   
